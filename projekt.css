@@ -1,0 +1,200 @@
+header {
+    background: #333;
+    background: linear-gradient(0deg, rgb(48, 48, 48) 8%, rgb(41, 91, 123) 100%);
+}
+
+header img {
+    width: 100px;;
+}
+
+header .logo {
+    text-align:center;
+    margin-bottom: -10px;
+}
+
+body {
+    background-color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Navigationbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-weight: 500;
+}   
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:#ffe4e1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555555;
+}
+
+.liHöger {
+    float: right;
+}
+/* Slutet av navigationbar:en */
+
+/* Section, den del av body som har innehållet av webbplatsen. */
+section {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url(bilder/background2_980x980.jpg);
+    color: rgb(62, 95, 59);
+}
+
+.container {
+    column-count: 2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 0;
+
+}
+
+.container div {
+    background-color: #ffffffC8;
+    margin: 5px;
+    margin-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    break-inside: avoid;
+}
+
+.container img {
+    width: 100%;
+}
+
+/* Särskilda CSS för Om oss-sidan */
+section .about {
+    text-align: center;
+    background-color: #ffffffB0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: auto;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 610px;
+}
+
+/* Särskilda CSS för Information-sidan */
+section .info {
+    text-align: center;
+    background-color: #ffffffB0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: auto;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 610px;
+}
+
+/* Formulär, kontakta oss */
+section .contact {
+    text-align: center;
+    background-color: #ffffffB0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: auto;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 610px;
+}
+
+/* Sammys del */
+input {
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin-bottom: 15px;
+    border: solid black;
+    margin: auto;
+
+}
+
+input[type="text"]
+input[type="email"] {
+    width: 200px;
+    height: 30px;
+
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+/* Slut av CSS för kontaktform */
+/* Slutet av section. */
+
+/* Footer, upphovsrätt-texten */
+footer {
+    font-size: 11px;
+    text-align: center;
+    color: lightgray;
+}
+
+
+/* CSS som styr vid skärmstorlek under 500px bredd. */
+
+@media (max-width: 750px) {
+    li {
+        float: none;
+        text-align: center;
+    }
+
+    .liHöger {
+        float: none;
+    }
+
+    .container {
+        display: grid;
+        gap: 3px;
+    }
+
+    section .info {
+        margin: 5px;
+    }
+
+    section .about {
+        margin: 5px;
+    }
+
+    section .contact {
+        margin: 5px;
+    }
+
+
+}
+
+/* CSS som styr hur brett container får bli. */
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        padding: auto;
+        margin: auto;
+        padding-top: 5px;
+    }
+}
